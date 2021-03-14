@@ -105,21 +105,21 @@ function modal2_close() {
 //checkbox-pledge with no reward
 function checkBox() {
     if (check[0].checked == true) {
-        var number2 = document.getElementById('number2').innerHTML;
-        var x = Number(number2);
-        document.getElementById('number2').innerHTML = x + 1;
-        document.getElementById('progress-bar-child').style.width = '78%';
+        number2.innerHTML = c + 1;
+        check_modal.display = 'flex';
+        progressbar.width = '78%';
 
         same[1].style.opacity = '50%';
         same[0].style.opacity = '50%';
         check[2].disabled = true;
         check[1].disabled = true;
+
+        modal[0].style.display = "none";
+
     }
     else if (check[0].checked == false) {
-        var number2 = document.getElementById('number2').innerHTML;
-        var x = Number(number2);
-        document.getElementById('number2').innerHTML = x - 1;
-        document.getElementById('progress-bar-child').style.width = '76%';
+        number2.innerHTML = c + 1;
+        progressbar.width = '76%';
 
         same[1].style.opacity = '100%';
         same[0].style.opacity = '100%';
@@ -204,7 +204,7 @@ function checkBox2() {
 }
 function dropdown1() {
     number1.innerHTML = x + b;
-    number2.innerHTML  = c + 1;
+    number2.innerHTML = c + 1;
     check_modal.display = 'flex';
     progressbar.width = '78%';
     modal[0].style.display = "none";
