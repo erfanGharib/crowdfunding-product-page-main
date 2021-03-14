@@ -1,0 +1,430 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+button , a {
+    outline: none;
+    text-decoration: none;
+    color: #fff;
+}
+h3 {
+    font-weight: 400;
+    position: relative;
+    bottom: 5px;
+    color: #777777;
+}
+p {
+    color: #777777;
+}
+
+
+/*hole page*/
+body {
+    max-width:1440px;
+    max-height: 245vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fafafa;
+}
+#overlay {
+    width: 100%;
+    min-height: 292%;
+    background: rgba(0, 0, 0, 0.527);
+    position: absolute;
+    z-index: 1;
+    display: none;
+}
+
+
+/*header*/
+header {
+    width: 100%;
+    display: flex;
+    height:43vh;
+    background-image: url('./images/image-hero-desktop.jpg');
+    background-size: cover;
+    font-family: Commissioner;
+    color: #fff;
+    justify-content: space-between;
+}
+header > h1 {
+    margin: 45px 0 0 170px;
+}
+header > h3 > span{
+    margin: 55px 110px 0 0;
+    font-weight: 300;
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    height: 10px;
+}
+header > h3 > img {
+    display: none;
+}
+
+/*body*/
+.-body- {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 730px;
+    position: relative;
+    bottom: 100px;
+    max-height: 3000px;
+    min-height: 1750px;
+    justify-content: space-evenly;
+}
+
+
+/*first ribbon*/
+.container-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 250px;
+    width: 100%;
+    background: rgb(255, 255, 255);
+    border: 1px solid #d6d6d6;
+    border-radius: 7px;
+    font-family: Commissioner;
+}
+.container-1-btns {
+    display: flex;
+    justify-content: space-between;
+    width: 635px;
+}
+.container-1 > img {
+    position:absolute;
+    top: -8px;
+}
+.container-1 > span {
+    width: 90%;
+    text-align: center;
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#btn1 {
+    background: #39b4af;
+    border: none;
+    border-radius: 50px;
+    height: 50px;
+    width: 160px;
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+    transition: ease .2s;
+}
+#btn1:hover {
+    background: #157a74;
+}
+#btn2 {
+    background: #ececec;
+    color: #707070;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-right: 30px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+#h4-1 , #h4-2{
+    color:#39b4af;
+}
+
+/*second ribbon*/
+.container-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    height: 200px;
+    width: 100%;
+    background: rgb(255, 255, 255);
+    border: 1px solid #d6d6d6;
+    border-radius: 7px;
+    font-family: Commissioner;
+}
+.container-2-num {
+    justify-content: space-evenly;
+    display: flex;
+    width: 80%;
+    left: 10px;
+    position: relative;
+}
+.container-2-num > span > h4 {
+    color: #777777;
+    font-weight: 400;
+}
+.container-2-num > span {
+    border-right: 1px solid #d6d6d6;
+    padding-right: 40px;
+}
+#num2 , #num1{
+    border-right: 1px solid #d6d6d6;
+}
+#num3 {
+    border:none;
+}
+#progress-bar {
+    border-radius: 50px;
+    background: #f8f8f8;
+    width: 80%;
+    height:12px;
+    overflow: hidden;
+    margin-left: 50px;
+}
+#progress-bar-child {
+    background: #39b4af;
+    width: 76%;
+    border-radius: 20px;
+    height: 100%;
+    transition: ease .4s;
+}
+#check-modal {
+    background: rgb(251, 251, 251);
+    border-radius: 7px;
+    width: 37.5%;
+    height: 400px;
+    position: fixed;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    z-index: 2;
+    display: none;
+    margin: 0 0 440px 90px;
+}
+#check-modal > button {
+    border-radius: 50px;
+    border: none;
+    background:#39b4af;
+    transition: ease .2s;
+    width: 110px;
+    height: 50px;
+    cursor: pointer;
+}
+#check-modal > button:hover {
+    background: #157a74;
+}
+
+
+/*modal*/
+.modal2 {
+    display: none;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    min-height: 850px;
+    max-height: 1000px;
+    width: 730px;
+    background: rgb(255, 255, 255);
+    border: 1px solid #d6d6d6;
+    border-radius: 7px;
+    font-family: Commissioner;
+    position: absolute;
+    z-index: 2;
+    right: 0;
+}
+
+#modal2-first {
+    height: 70px;
+    width: 640px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+#modal2-first > svg {
+    position: relative;
+    left: 647px;
+    top: 10px;
+    cursor: pointer;
+}
+#modal2-first > svg > path:hover {
+    opacity: 1;
+}
+.same2 {
+    border: 1px solid #dcdcdc;
+    border-radius: 7px;
+    padding: 30px 40px 40px 25px;
+    width: 600px;
+    margin: 10px 0;
+
+}
+.same {
+    padding: 35px 40px 40px 25px;
+    top: 30px;
+    width: 600px;
+    margin: 10px 0;
+    display: grid;
+    grid-template-areas: 
+    'check check h4 h4 h4 span'
+    'p p p p p p'
+    'dropdown dropdown dropdown dropdown dropdown dropdown';
+    border: 1px solid #dcdcdc;
+    border-radius: 7px;
+    row-gap: 5px;
+}
+.same > p , .same2 > p{
+    position: relative;
+    left: 45px;
+    grid-area: p;
+}
+.same > h4 {
+    grid-area: h4;
+    position: relative;
+    left: 0;
+    top:5px;
+}
+.same > span {
+    display: flex;
+    align-items: center;
+    grid-area: span;
+    bottom: 10px;
+    position: relative;
+}
+.radio { 
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+    position: relative; 
+    padding-left: 45px; 
+    margin-bottom: 15px; 
+    grid-area:check;
+    cursor: pointer; 
+    font-size: 20px; 
+    font-weight: 700;
+} 
+.radio:hover {
+    color:#35b6b2;
+}
+input[type=checkbox] { 
+    visibility: hidden; 
+}
+.check { 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    height: 24px; 
+    width: 24px; 
+    background:none;
+    border: 1px solid #616161;
+    border-radius: 60px; 
+}
+.check:after { 
+    content: ""; 
+    position: absolute;
+}
+.radio input:checked ~ .check:after { 
+    display: inline; 
+}
+.radio input ~ .check:after { 
+    display: none; 
+}
+.radio .check:after { 
+    left: 6px; 
+    top: 6px;
+    width: .05px; 
+    height: .05px; 
+    border: 6px solid #39b4af;
+    border-radius: 50%;
+}
+.dropdown {
+    grid-area:dropdown;
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #d6d6d6;
+    padding: 25px 35px 25px 35px;
+    width: 99%;
+    position: relative;
+    top: 40px;
+    right: 25px;
+    transition: ease .3s;
+}
+.dropdown-btn {
+    border-radius: 50px;
+    border: none;
+    background:#39b4af;
+    transition: ease .2s;
+    width: 95px;
+    height: 40px;
+    cursor: pointer;
+    transition: ease .2s;
+}
+.dropdown-btn:hover {
+    background:#157a74
+}
+#pledge1 , #pledge2 {
+    border-radius: 50px;
+    border: none;
+    background:none;
+    width: 65px;
+    height: 40px;
+    cursor: pointer;
+    border: 1px solid #222;
+    padding-inline-start: 20px;
+    outline: none;
+    margin-right: 15px;
+}
+
+
+
+/*third ribbon*/
+.container-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    height: 1200px;
+    width: 93%;
+    background: rgb(255, 255, 255);
+    border: 1px solid #d6d6d6;
+    border-radius: 7px;
+    font-family: Commissioner;
+    padding-left: 50px;
+}
+.container-3-child {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 250px;
+    width: 92%;
+    background: rgb(255, 255, 255);
+    border: 1px solid #d6d6d6;
+    border-radius: 7px;
+    font-family: Commissioner;
+}
+.container-3-child > span {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 564px;
+}
+.container-3-child > span > span {
+    justify-content: space-evenly;
+    display: flex;
+    width: 90px;
+    align-items: center;
+}
+.container-3-btn {
+    background: #39b4af;
+    border: none;
+    border-radius: 50px;
+    height: 45px;
+    width: 160px;
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+    transition: ease .2s;
+}
+.container-3-btn:hover {
+    background: #157a74;
+}

@@ -1,0 +1,508 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+button , a {
+    outline: none;
+    text-decoration: none;
+    color: #fff;
+}
+h3 {
+    font-weight: 400;
+    position: relative;
+    bottom: 5px;
+    color: #777777;
+}
+p {
+    color: #777777;
+}
+
+
+/*hole page*/
+body {
+    width:375px;
+    max-height: 420vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fafafa;
+    overflow-x: scroll;
+}
+#overlay {
+    width: 220%;
+    height: 430%;
+    background: rgba(0, 0, 0, 0.527);
+    position: absolute;
+    z-index: 1;
+    display: none;
+}
+
+
+/*header*/
+header {
+    width: 155%;
+    display: flex;
+    height:60vh;
+    background-image: url('./images/image-hero-mobile.jpg');
+    background-size: cover;
+    font-family: Commissioner;
+    position: relative;
+    left: 90px;
+    color: #fff;
+    justify-content: space-between;
+}
+header > h1 {
+    margin: 45px 0 0 50px;
+    font-size: 40px;
+}
+header > h3 {
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    height: 10px;
+    position: relative;
+}
+header > h3 > span > a {
+    color: #000;
+    font-size: 30px;
+    padding:30px 0 32px 40px;
+    border: 1px solid #dcdcdc;
+    width: 100%;
+}
+#menu-child {
+    background: #fff;
+    box-shadow: 0 60px 300px #000;
+    visibility: hidden;
+    height: 300px;
+    width: 480px;
+    position: absolute;
+    flex-direction: column;
+    border-radius: 15px;
+    right: -65px;
+    top: 0;
+    z-index: 1;
+    border: 1px solid #dcdcdc;
+    overflow: hidden;
+    transition: ease .5s;
+}
+header > h3 > img {
+    position: relative;
+    left:240px;
+    top: 60px;
+    display: inline;
+}
+#img1 {
+    display: none;
+}
+/*body*/
+.-body- {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 470px;
+    position: relative;
+    bottom: 110px;
+    height:3000px;
+    justify-content: space-evenly;
+    position: relative;
+    left: 90px;
+}
+
+
+/*first ribbon*/
+.container-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+    height: 345px;
+    width: 100%;
+    background: rgb(255, 255, 255);
+    border: 1px solid #d6d6d6;
+    border-radius: 7px;
+    font-family: Commissioner;
+}
+.container-1-btns {
+    display: flex;
+    justify-content: space-between;
+    width: 365px;
+}
+.container-1 > img {
+    position:absolute;
+    top: -10px;
+    width: 70px;
+}
+.container-1 > span {
+    width: 90%;
+    text-align: center;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 7px;
+}
+#btn1 {
+    background: #39b4af;
+    border: none;
+    border-radius: 50px;
+    font-size: 17px;
+    height: 62px;
+    width: 270px;
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+    transition: ease .2s;
+}
+#btn1:hover {
+    background: #157a74;
+}
+#btn2 {
+    background: none;
+    color: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+#btn2 > svg {
+    position: absolute;
+    top:272px;
+}
+
+/*second ribbon*/
+.container-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    height: 550px;
+    width: 100%;
+    background: rgb(255, 255, 255);
+    border: 1px solid #d6d6d6;
+    border-radius: 7px;
+    font-family: Commissioner;
+}
+.container-2-num {
+    justify-content: space-evenly;
+    display: flex;
+    width: 80%;
+    left: 45px;
+    height: 315px;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    font-size: 24px;
+}
+.container-2-num > span > h4 {
+    color: #777777;
+    font-weight: 400;
+}
+#num2 , #num3{
+    border-top: 1px solid #d6d6d6;
+    border-right: none;
+    padding: 25px 0 30px 2px;
+    width: 150px;
+}
+#num1 {
+    border:none;
+    padding: 25px 0 30px 2px;
+    width: 250px;
+}
+#progress-bar {
+    border-radius: 60px;
+    background: #f8f8f8;
+    width: 80%;
+    height:20px;
+    overflow: hidden;
+    margin-left: 50px;
+}
+#progress-bar-child {
+    background: #39b4af;
+    width: 76%;
+    height: 100%;
+    transition: ease .4s;
+}
+#check-modal {
+    background: rgb(251, 251, 251);
+    border-radius: 10px;
+    width: 76%;
+    height: 550px;
+    position: fixed;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    z-index: 2;
+    padding: 0 40px;
+    font-size: 25px;
+    display: none;
+    left: -60px;
+    bottom: 50px;
+    right: 0;
+}
+#check-modal > h2 {
+    font-size: 30px;
+}
+#check-modal > img {
+    width: 100px;
+} 
+#check-modal > button {
+    border-radius: 50px;
+    border: none;
+    background:#39b4af;
+    transition: ease .2s;
+    width: 150px;
+    height: 80px;
+    font-size: 20px;
+    cursor: pointer;
+}
+#check-modal > button:hover {
+    background: #157a74;
+}
+
+
+/*modal*/
+.modal2 {
+    display: none;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    max-height: 3000px;
+    min-height: 1300px;
+    width: 470px;
+    background: rgb(255, 255, 255);
+    border: 1px solid #d6d6d6;
+    border-radius: 7px;
+    font-family: Commissioner;
+    position: absolute;
+    z-index: 2;
+    padding: 20px 0;
+    top: -200px;
+}
+#modal2-first {
+    height: 60px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+
+
+}
+#modal2-first > svg {
+    position: absolute;
+    display: block;
+    top: 2pc;
+    left: 26pc;
+    bottom: 0;
+    right: 0;
+    cursor: pointer;
+}
+#modal2-first > svg > path:hover {
+    opacity: 1;
+}
+.same2 {
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    grid-template-areas: 
+    'check check check check check check'
+    'p p p p p p';
+    border: 1px solid #dcdcdc;
+    border-radius: 7px;
+    width: 340px;
+    padding: 33px;
+    font-size: 20px;
+}
+.same {
+    display: grid;
+    grid-template-areas:
+    'check check check check check h4'
+    'p p p p p p'
+    'span span span span span span'
+    'dropdown dropdown dropdown dropdown dropdown dropdown';
+    border: 1px solid #dcdcdc;
+    border-radius: 7px;
+    width: 340px;
+    /* height: 250px; */
+    padding-top: 25px;
+    max-height: 250px;
+    min-height: 200px;
+}
+.same2 > p {
+    left: 0;
+}
+.same > p {
+    font-size: 20px;
+    grid-area: p;
+    left: 0;
+    width: 360px;
+    margin-top: 10px;
+}
+.radio { 
+    grid-area:check;
+    cursor: pointer; 
+    font-size: 20px; 
+    font-weight: 700;
+} 
+.same > h4 {
+    grid-area: h4;
+    position: relative;
+    left: -12em;
+    top: 1.7em;
+}
+#h4-1 {
+    left: -15.5em;
+    color:#39b4af;
+}
+#h4-2 {
+    left: -10.5em;
+    color:#39b4af;
+}
+.radio:hover {
+    color:#35b6b2;
+}
+input[type=checkbox] { 
+    visibility: hidden; 
+}
+.check { 
+    position: absolute; 
+    height: 24px; 
+    width: 24px; 
+    top: 8px;
+    background:none;
+    border: 1px solid #616161;
+    border-radius: 60px;
+}
+.check:after { 
+    content: ""; 
+    position: absolute;
+}
+.radio input:checked ~ .check:after { 
+    display: inline; 
+}
+.radio input~ .check:after { 
+    display: none; 
+}
+.radio .check:after { 
+    left: 6px; 
+    top: 6px;
+    width: .05px; 
+    height: .05px; 
+    border: 6px solid #39b4af;
+    border-radius: 50%;
+}
+.same > span {
+    grid-area: span;
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 10px;
+}
+.dropdown {
+    grid-area:dropdown;
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #d6d6d6;
+    padding: 10px 25px;
+    width: 355px;
+    position: relative;
+    top: 15px;
+    right: 24px;
+    transition: ease .3s;
+}
+.dropdown-btn {
+    border-radius: 50px;
+    border: none;
+    background:#39b4af;
+    transition: ease .2s;
+    width: 95px;
+    height: 40px;
+    cursor: pointer;
+}
+.dropdown-btn:hover {
+    background:#157a74
+}
+#pledge1 , #pledge2 {
+    border-radius: 50px;
+    background:none;
+    width: 65px;
+    height: 40px;
+    cursor: pointer;
+    border: 1px solid #222;
+    padding-inline-start: 20px;
+    outline: none;
+    margin-right: 15px;
+}
+
+
+/*third ribbon*/
+.container-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    height: 1900px;
+    width: 90%;
+    background: rgb(255, 255, 255);
+    border: 1px solid #d6d6d6;
+    border-radius: 7px;
+    font-family: Commissioner;
+    padding:10px 20px 0 30px;
+}
+.container-3-child {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    height: 450px;
+    width: 84%;
+    background: rgb(255, 255, 255);
+    border: 1px solid #d6d6d6;
+    border-radius: 7px;
+    font-family: Commissioner;
+    padding:0 26px;
+}
+.container-3-child > p , .container-3 > p{
+    font-size: 20px;
+}
+.container-3-child > span {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 230px;
+}
+.container-3-child > span > span {
+    justify-content: flex-start;
+    display: flex;
+    width: 90px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.container-3-btn {
+    background: #39b4af;
+    border: none;
+    border-radius: 50px;
+    height: 55px;
+    width: 180px;
+    font-size: 15px;
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+    transition: ease .2s;
+}
+.container-3-btn:hover {
+    background: #157a74;
+}
